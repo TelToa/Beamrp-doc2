@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script defer src="javascript.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preload" href="font-files/InterVariable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font-files/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font-files/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font-files/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font-files/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font-files/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="jobstyle.css">
+    <style>
+        @font-face {
+            font-family: InterVariable;
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url('font-files/InterVariable.woff2') format('woff2');
+        }
+        @font-face {
+            font-family:Inter;
+            font-style:normal; 
+            font-weight:400;
+            font-display:swap;
+            src:url("font-files/Inter-Regular.woff2") format("woff2"); 
+        }
+        @font-face {
+            font-family:Inter;
+            font-style:normal;
+            font-weight:500;
+            font-display:swap;
+            src:url("font-files/Inter-Medium.woff2") format("woff2");
+        }
+        @font-face {
+            font-family:Inter; 
+            font-style:normal; 
+            font-weight:600; 
+            font-display:swap; 
+            src:url("font-files/Inter-SemiBold.woff2") format("woff2");
+        }
+        @font-face {
+            font-family:Inter;
+            font-style:normal;
+            font-weight:700;
+            font-display:swap;
+            src:url("font-files/Inter-Bold.woff2") format("woff2");
+        }
+        @font-face { 
+            font-family:Inter;
+            font-style:italic;
+            font-weight:400;
+            font-display:swap;
+            src:url("font-files/Inter-Italic.woff2") format("woff2");
+        }
+        :root {
+            font-family: InterVariable, Inter, sans-serif;
+            --spacing: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="delimg">
+    <h1 class="jobtitle">Delivery Driver</h1>
+</div>
+    <div class="filler"></div>
+
+<div class="content">
+    <h3 style="margin:0.5rem">Table of contents</h3>
+        <ol class="toc" role="list">
+            <li>
+                <a href="#1">Roleplay</a>
+            </li>
+            <li>
+                <a href="#2">Levels</a>
+            </li>
+</div>
+
+<h2 id="1">
+    <span class="sectionnumber">Section 1</span>
+    <br><span class="sectiontitle">Roleplay</span>
+</h2>
+
+<p>It is up to the player to decide what is a realistic way to roleplay their job, however, a general expectation for roleplaying jobs is:
+
+    <li>Stopping at your delivery location for a couple seconds</li>
+    <li>Getting out of the vehicle is optional; however it would be better roleplay-wise</li>
+    <li>Driving safely so you don’t damage any goods you are delivering</li>
+</p>
+
+<h2 id="2">
+    <span class="sectionnumber">Section 2</span>
+    <br><span class="sectiontitle">Levels</span>
+</h2>
+
+    <div class="level">
+      <h2>Level 1</h2>
+        <p class="description">Your starting level, only allows access to <a href="delivery.html" style="color:#eed69d">Delivery</a> and <a href="emergencyservice.html" style="color:#95b0da">Emergency Service jobs</a></p>
+        <div class="job-income">
+            <p>$100 <span class="income-extra">per delivery</span> inside city</p>
+            <p>$20 <span class="income-extra">per delivery</span> outside city</p>
+        </div>
+        <ul class="benefits">
+            <li>Use your personal vehicle for deliveries</li>
+        </ul>
+    </div>
+  
+    <div class="level">
+        <h2>Level 2</h2>
+        <p class="description">Gives you more money, and expands the types of jobs you can do</p>
+
+        <div class="job-income">
+            <p>$200 <span class="income-extra">per delivery</span> inside city</p>
+            <p>$50 <span class="income-extra">per delivery</span> outside city</p>
+        </div>
+        <ul class="benefits">
+            <li>Unlocks <a href="#" onclick="checkLink('taxi')">Taxi driver</a> job</li>
+            <li>Unlocks <a href="#" onclick="checkLink('bus')">Bus driver</a> job</li>
+        </ul>
+    </div>
+  
+    <div class="level">
+        <h2>Level 3</h2>
+        <p class="description">Just more money</p>
+        <div class="job-income">
+            <p>$200 <span class="income-extra">per delivery</span> inside city</p>
+            <p>$50 <span class="income-extra">per delivery</span> outside city</p>
+        </div>
+    </div>
+
+    <div class="level">
+        <h2>Level 4</h2>
+        <p class="description">You're getting up in the world</p>
+        <div class="job-income">
+            <p>$400 <span class="income-extra">per delivery</span> inside city</p>
+            <p>$200 <span class="income-extra">per delivery</span> outside city</p>
+        </div>
+        <ul class="benefits">
+            <li>Unlocks <a href="#" onclick="checkLink('truck')">Trucking</a> job</li>
+            <li>Unlocks <a href="#" onclick="checkLink('box')">Box Truck</a> job</li>
+        </ul>
+    </div>
+  
+    <div class="level">
+        <h2>Level 5</h2>
+        <p class="description">The final level</p>
+        <div class="job-income">
+            <p>$500 <span class="income-extra">per delivery</span> inside city</p>
+            <p>$400 <span class="income-extra">per delivery</span> outside city</p>
+        </div>
+    </div>
+    <!-- Add more levels as needed -->
+  </div>
+  
+</body>
+</html>
