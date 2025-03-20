@@ -60,7 +60,9 @@ hr {
 
 .maincontent {
     overflow-y: auto;
-    padding-bottom: 45px
+    padding-bottom: 45px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .navbar {
@@ -142,10 +144,15 @@ hr {
     /* Link styling */
 a{
     text-decoration: none;
+    color: #356fd4;
+    transition: color 0.2s ease;
+}
+ol a{
+    text-decoration: none;
     color: #ffffff;
     transition: color 0.2s ease;
 }
-a:hover {
+ol a:hover {
     color: #d977ff;
 }
 
