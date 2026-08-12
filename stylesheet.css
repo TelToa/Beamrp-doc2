@@ -16,8 +16,6 @@ h2 {
     font-weight: 500;
     font-size: 3rem;
 }
-
-/* Consolidated Heading 3 styling */
 h3 {
     display: flex;
     align-items: center;
@@ -44,7 +42,6 @@ hr {
     border-top: 1px solid #4d4d4d;
 }
 
-/* Hamburger & Layout Styling */
 .hamburger {
     background: transparent;
     border: none;
@@ -216,7 +213,6 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 padding: 0.5rem 0rem;
 z-index: 4;
 
-/* Slide up behind navbar when closed */
 transform: translateY(-100%);
 opacity: 0;
 visibility: hidden;
@@ -225,14 +221,12 @@ transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
             visibility 0.35s;
 }
 
-/* Active State (Slides Down) */
 .fullwidth-dropdown.show {
 transform: translateY(0);
 opacity: 1;
 visibility: visible;
 }
 
-/* Horizontal Card Grid */
 .dropdown-job-grid {
 display: grid;
 grid-template-columns: repeat(6, 1fr);
@@ -283,19 +277,17 @@ margin: 0 auto;
 .dropdownbox:hover img {
     transform: scale(1.1);
 }
-/* Responsive Breakpoints */
 @media (max-width: 1024px) {
 .dropdown-job-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3x2 on tablets */
+    grid-template-columns: repeat(3, 1fr);
 }
 }
 
 @media (max-width: 600px) {
 .dropdown-job-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2x3 on mobile */
+    grid-template-columns: repeat(2, 1fr);
 }
 }
-/* Title styling */
 .titlediv {
     display: flex;
     justify-content: center;
@@ -317,7 +309,6 @@ margin: 0 auto;
     margin-top: -0.2rem;
 }
 
-/* Link styling */
 a {
     text-decoration: none;
     color: #356fd4;
@@ -334,7 +325,6 @@ ol a:hover {
     color: var(--yellow-light);
 }
 
-/* Content and Area styling */
 .content {
     padding: var(--spacing);
     margin: var(--spacing);
@@ -418,7 +408,6 @@ ol a:hover {
     line-height: 1.5;
     border-radius: var(--radius-sm);
 }
-/* Table styling */
 .table-wrapper {
     overflow-x: auto;
     margin: 1.5rem 0;

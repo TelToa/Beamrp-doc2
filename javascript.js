@@ -29,9 +29,6 @@ function checkLink(docName) {
 // -----------------------------------------------------------------
 // Sidebar
 // -----------------------------------------------------------------
-// -----------------------------------------------------------------
-// PERSISTENT SIDEBAR DRAWER (PERSISTS ACROSS PAGES & RELOADS)
-// -----------------------------------------------------------------
 
 // 1. Restore the sidebar state on page load without trigger animation
 document.addEventListener('DOMContentLoaded', function () {
@@ -125,7 +122,7 @@ function checkLink(docName) {
         });
 
 // -------------------------------------------------------------
-// INTERACTIVE MAP (PAN & ZOOM CONTROLS)
+// Map
 // -------------------------------------------------------------
 function initInteractiveMap() {
     const viewport = document.getElementById('mapViewport');
