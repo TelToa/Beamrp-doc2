@@ -1,120 +1,123 @@
+@import 'variables.css';
+@import 'stylesheet.css';
+
 .jobtitle {
   text-align: center;
   margin: 0;
-  padding: 7%;
+  padding: 0 1rem; /* Prevents text from hitting edge of screen on phone */
   text-shadow: 10px 10px 14px rgba(0, 0, 0, 0.8);
-  font-size: 5.6vw;
+  
+  font-size: clamp(1.8rem, 5vw, 3.5rem); 
+  line-height: 1.1; /* Keeps wrapped lines from colliding on mobile */
 }
 
-.criimg {
-    position: absolute;
-    background: url(images/highQuality/Crime.webp) no-repeat center;
-    height: 40vh;
-    width: 100%;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    left: 0;
-    background-position: 50% 54%;
-    background-size: 100%;
+.jobtitle span {
+  display: block;
+  font-size: clamp(0.9rem, 2vw, 1.2rem) !important;
+  font-weight: normal;
+  margin-top: 0.3rem;
 }
-.truimg {
-    position: absolute;
-    background: url(images/highQuality/Trucking.webp) no-repeat center;
-    height: 40vh;
-    width: 100%;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    left: 0;
-    background-position: 50% 0%;
-    background-size: 100%;
+
+.busimg,
+.deliveryimg,
+.taxiimg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: inset 0 -90px 55px -30px var(--bg-dark);
+  height: clamp(150px, 25vh, 280px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145%;
+  transform: translateX(-15%);
 }
-.taximg {
-    position: absolute;
-    background: url(images/highQuality/Taxi.webp) no-repeat center;
-    height: 40vh;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    left: 0;
-    background-position: 50% 40%;
-    background-size: 100%;
-}
-.emeimg {
-    position: absolute;
-    background: url(images/highQuality/Emergency.webp) no-repeat center;
-    height: 40vh;
-    width: 100%;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    left: 0;
-    background-position: 50% 45%;
-    background-size: 100%;
-}
-.boximg {
-    position: absolute;
-    background: url(images/highQuality/Boxtruck.webp) no-repeat center;
-    height: 40vh;
-    width: 100%;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    left: 0;
-    background-position: 50% 0%;
-    background-size: 100%;
+
+.deliveryimg {
+  background-image: url('images/highQuality/Truckbridge.webp');
 }
 .busimg {
+  background-image: url('images/highQuality/Bus.webp');    
+}
+.taxiimg {
+  background-image: url('images/highQuality/Taxi.webp');
+}
+
+.reward-container {
+    background-color: var(--bg-surface);
+    padding: 0px 15px 0px 15px;
+    line-height: 1.5;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    margin-bottom: 10px;
+}
+
+.map-viewport {
+    position: relative;
+    width: 100%;
+    height: clamp(350px, 55vh, 650px); /* Scales responsively */
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    touch-action: none; /* Disables default touch scrolling inside viewport */
+}
+
+.map-viewport:active {
+    cursor: grabbing;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 0 0;
+    will-change: transform;
+}
+
+.map-wrapper img,
+.map-wrapper svg {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none; /* Prevents browser native image dragging */
+    object-fit: contain;
+}
+
+.map-controls {
     position: absolute;
-    background: url(images/highQuality/Bus.webp) no-repeat center;
-    height: 40vh;
-    width: 100%;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    left: 0;
-    background-position: 50% 55%;
-    background-size: 100%;
-}
-.delimg {
-    background: url(images/highQuality/Truckbridge.webp) no-repeat center;
-    height: 40vh;
-    width: 100%;
-    box-shadow: inset 0 -160px 55px -30px #0e0f11;
-    background-position: 50% 60%;
-    background-size: 100%;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 10;
 }
 
-
-.filler {
-    height: 40vh;
-    width: 100%;
-}
-.level {
-    margin-bottom: 30px;
-    padding: 15px;
-    border: 1px solid #4800ac;
-    border-radius: 6px;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  .level h2 {
-    margin-top: 4px;
-    margin-bottom: 10px;
-  }
-  .level .description {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  .level .benefits {
-    list-style-type: disc;
-    padding-left: 0;
-  }
-  .level .benefits li{
-    padding: 5px 0;
-    margin-left: 20px;
-  }
-  .level .job-income {
+.map-btn {
+    width: 38px;
+    height: 38px;
+    background: rgba(22, 23, 29, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    border-radius: var(--radius-sm);
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 10px;
-    background: #155725;
-    border: 5px dashed #28a745;
-    border-bottom-right-radius: 5rem;
-    border-top-right-radius: 5rem;
-    margin-right: 65%;
-  }
-  .level .job-income p {
-    margin-left: 20px;
-    font-size: 1.2em;
-  }
-  .level .job-income .income-extra {
-    color: #c1c1c1;
-  }
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.map-btn:hover {
+    background: var(--yellow-primary);
+    color: #000000;
+    border-color: var(--yellow-primary);
+    transform: scale(1.05);
+}
