@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include 'head.php'; ?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jobstyle.css">
+    <script defer src="javascript.js"></script>
+    <title>BeamRP - Documentation</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Sidebar">☰</button>
+        </div>
+        <div class="nav-center">
+            <a href="index.html">Introduction</a>
+                    <button class="nav-link" id="jobsBtn" onclick="toggleJobsDropdown(event)" aria-expanded="false">
+                        Jobs <span class="chevron">▼</span>
+                    </button>
+                    
+
+            <a href="https://docs.google.com/spreadsheets/d/1eTx5NwP8ICTK3PjhSu8ZJvkPp9dxqNUeACPlvI5YD6c/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Prices</a>
+            <a href="#" onclick="checkLink('businesses')">Businesses</a>
+            <a href="#" onclick="checkLink('lawcrime')">Law and Crime</a>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    <div class="fullwidth-dropdown" id="jobsDropdownMenu">
+        <div class="dropdown-job-grid">
+            <a class="dropdownbox" href="delivery.html">
+                <h1>Delivery</h1>
+                <img loading="lazy" src="images/lowQuality/Truckbridge.webp" alt="Delivery">
+            </a>
+            <a class="dropdownbox" href="taxi.html">
+                <h1>Taxi Driver</h1>
+                <img loading="lazy" src="images/lowQuality/Taxi.webp" alt="Taxi Driver">
+            </a>
+            <a class="dropdownbox" href="bus.html">
+                <h1>Bus Driver</h1>
+                <img loading="lazy" src="images/lowQuality/Bus.webp" alt="Bus Driver">
+            </a>
+            <a class="dropdownbox" href="business.html">
+                <h1>Business</h1>
+                <img loading="lazy" src="images/lowQuality/Boxtruck.webp" alt="Business">
+            </a>
+            <a class="dropdownbox" href="emergency.html">
+                <h1>Emergency</h1>
+                <img loading="lazy" src="images/lowQuality/Emergency.webp" alt="Emergency Services">
+            </a>
+            <a class="dropdownbox" href="crime.html">
+                <h1>Criminal</h1>
+                <img loading="lazy" src="images/lowQuality/Crime.webp" alt="Criminal">
+            </a>
+        </div>
+    </div>
+
+<div class="tabcontainer">
+    <!-- Sidebar Navigation -->
+    <aside class="side">
+        <ol class="toc" role="list">
+            <li><a href="#1">First</a></li>
+            <li>
+                <a href="#2">Second</a>
+                <ul>
+                    <li><a href="#whitelist">Bulletpoint</a></li>
+                </ul>
+            </li>
+        </ol>
+        <div class = "bottom-side">
+            <a href="#" onclick="checkLink('index')">Home</a>
+            <a href="#" onclick="checkLink('reference')" style="position:fixed; right:5px">Reference</a>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="maincontent">
+
+    <!-- Image Header -->
+    <div class="busimg">
+        <h1 class="jobtitle">Bus Driver<br><span>Unlocked at delivery level 2</span></h1>
+    </div>
+
+        <h2 id="1">
+            <span class="sectionnumber">Section 1</span>
+            <br><span class="sectiontitle">Roleplay</span>
+        </h2>
+
+        <p>Drive between bus stops to keep the people of Firwood County going.
+            <li><b>Deport departure:</b> Begin at the bus depot (The gated section in the alleyway).</li>
+            <li><b>Follow the route:</b> Follow the bus routes provided</li>
+            <li><b>Stop at Delivery Locations:</b> Pause for a few seconds at designated drop-off points.</li>
+
+        </p>
+
+            <!-- Section 2 -->
+            <h2 id="2">
+                <span class="sectionnumber">Section 2</span>
+                <br><span class="sectiontitle">Server Limits</span>
+            </h2>
+
+            <p>To ensure server stability and balance, bus drivers must adhere to the following slot limits and cooldowns:</p>
+
+            <div class="horizontal-container">
+                <div class="area-card">
+                    <div class="area-title">Active Bus Slot Limit</div>
+                    <div class="reward-container">
+                        <p>Maximum Permitted: <b>3 Buses</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p>If 3 buses are already active, someone must quit the job before a new slot becomes available.</p>
+                    </div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-title">Shift Limit & Cooldown</div>
+                    <div class="reward-container">
+                        <p>Max Stops per Shift: <b>30 Stops</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p>Mandatory Cooldown: <span style="color:#639958"><b>30 IRL Minutes</b></span> after reaching 30 stops.</p>
+                    </div>
+                </div>
+            </div>
+            <h2 id="3">
+                <span class="sectionnumber">Section 3</span>
+                <br><span class="sectiontitle">Vehicle & Earnings</span>
+            </h2>
+
+            <div class="horizontal-container">
+                <div class="area-card">
+                    <div class="area-title">Provided Vehicle</div>
+                    <div class="reward-container">
+                        <p>Vehicle: <b>Gavril H-Series ‘Type A’ Bus</b></p>
+                    </div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-title">Payout Rate</div>
+                    <div class="reward-container">
+                        <p>Earnings: <span style="color:#639958"><b>$100</b></span> per completed bus stop</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="3">
+                <span class="sectionnumber">Section 4</span>
+                <br><span class="sectiontitle">Bus Routes Map</span>
+            </h2>
+                <div class="map-viewport" id="mapViewport">
+                    <div class="map-controls">
+                        <button class="map-btn" id="zoomInBtn" title="Zoom In">+</button>
+                        <button class="map-btn" id="zoomOutBtn" title="Zoom Out">−</button>
+                        <button class="map-btn" id="zoomResetBtn" title="Reset View">⟲</button>
+                        <button class="map-btn" id="openTabBtn" title="Open Map in New Tab" aria-label="Open Map in New Tab">↗</button>
+                    </div>
+
+                    <div class="map-wrapper" id="mapWrapper">
+                        <img src="images/busroutes.svg" alt="BeamRP Bus Route Map" id="mapImage" draggable="false">
+                    </div>
+                </div>
+            </section>
+    </main>
+</div>
+</body>
+</html>

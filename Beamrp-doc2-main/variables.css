@@ -1,0 +1,24 @@
+:root {
+    --bg-dark: #0d0e12;
+    --bg-surface: #16171d;
+    --bg-card: #1f2029;
+    --bg-sidebar: #121318;
+    --yellow-primary: #FDBF12;
+    --yellow-light: #FDD35D;
+    --yellow-glow: #FDD35D90;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    --border-color: #2e303d;
+    --radius-sm: 0.5em;
+    --radius-md: 1em;
+    --radius-lg: 2em;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/InterVariable.woff2') format('woff2');
+}

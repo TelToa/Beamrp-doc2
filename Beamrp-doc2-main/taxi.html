@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include 'head.php'; ?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jobstyle.css">
+    <script defer src="javascript.js"></script>
+    <title>BeamRP - Documentation</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Sidebar">☰</button>
+        </div>
+        <div class="nav-center">
+            <a href="index.html">Introduction</a>
+                    <button class="nav-link" id="jobsBtn" onclick="toggleJobsDropdown(event)" aria-expanded="false">
+                        Jobs <span class="chevron">▼</span>
+                    </button>
+                    
+
+            <a href="https://docs.google.com/spreadsheets/d/1eTx5NwP8ICTK3PjhSu8ZJvkPp9dxqNUeACPlvI5YD6c/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Prices</a>
+            <a href="#" onclick="checkLink('businesses')">Businesses</a>
+            <a href="#" onclick="checkLink('lawcrime')">Law and Crime</a>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    <div class="fullwidth-dropdown" id="jobsDropdownMenu">
+        <div class="dropdown-job-grid">
+            <a class="dropdownbox" href="delivery.html">
+                <h1>Delivery</h1>
+                <img loading="lazy" src="images/lowQuality/Truckbridge.webp" alt="Delivery">
+            </a>
+            <a class="dropdownbox" href="taxi.html">
+                <h1>Taxi Driver</h1>
+                <img loading="lazy" src="images/lowQuality/Taxi.webp" alt="Taxi Driver">
+            </a>
+            <a class="dropdownbox" href="bus.html">
+                <h1>Bus Driver</h1>
+                <img loading="lazy" src="images/lowQuality/Bus.webp" alt="Bus Driver">
+            </a>
+            <a class="dropdownbox" href="business.html">
+                <h1>Business</h1>
+                <img loading="lazy" src="images/lowQuality/Boxtruck.webp" alt="Business">
+            </a>
+            <a class="dropdownbox" href="emergency.html">
+                <h1>Emergency</h1>
+                <img loading="lazy" src="images/lowQuality/Emergency.webp" alt="Emergency Services">
+            </a>
+            <a class="dropdownbox" href="crime.html">
+                <h1>Criminal</h1>
+                <img loading="lazy" src="images/lowQuality/Crime.webp" alt="Criminal">
+            </a>
+        </div>
+    </div>
+
+<div class="tabcontainer">
+    <!-- Sidebar Navigation -->
+    <aside class="side">
+        <ol class="toc" role="list">
+            <li><a href="#1">Roleplay</a></li>
+            <li>
+                <a href="#2">Levels</a>
+            </li>
+        </ol>
+        <div class = "bottom-side">
+            <a href="#" onclick="checkLink('index')">Home</a>
+            <a href="#" onclick="checkLink('reference')" style="position:fixed; right:5px">Reference</a>
+        </div>
+    </aside>
+
+
+
+    <!-- Main Content -->
+    <main class="maincontent">
+    <!-- Image Header -->
+    <div class="taxiimg">
+        <h1 class="jobtitle">Taxi Driver<br><span>Unlocked at delivery level 2</span></h1>
+    </div>
+
+        <h2 id="1">
+            <span class="sectionnumber">Section 1</span>
+            <br><span class="sectiontitle">Roleplay</span>
+        </h2>
+
+        <p>The taxi driver's role is to drive around the county picking up either real or pretend passengers
+            <li><b>Find a house/business:</b> Open the door for passengers</li>
+            <li><b>Drive cautiously:</b> Avoid upsetting passengers</li>
+        </p>
+
+        <h2 id="2">
+            <span class="sectionnumber">Section 2</span>
+            <br><span class="sectiontitle">Levels</span>
+        </h2>
+        <p>
+             Progress to higher job levels by completing hours in service (e.g., 3 hours required for Level 3).</p>
+        <div class="horizontal-container">
+            <div class="area-card">
+                <div class="area-title">Level 1</div>
+                    <div class="reward-container">
+                        <p>Vehicle: <b>Soliad Lansdale (taxi)</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p>Max passengers: <b>6</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p><span style="color:#639958">$50</span> per passenger<br>
+                    </div>
+            </div>
+            <div class="area-card">
+                <div class="area-title">Level 1</div>
+                    <div class="reward-container">
+                        <p>Vehicle: <b>Grand Marshall (taxi)</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p>Max passengers: <b>4</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p><span style="color:#639958">$100</span> per passenger<br>
+                    </div>
+            </div>
+            <div class="area-card">
+                <div class="area-title">Level 1</div>
+                    <div class="reward-container">
+                        <p>Vehicle: <b>Bruckell Bastion (taxi)</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p>Max passengers: <b>4</b></p>
+                    </div>
+                    <div class="reward-container">
+                        <p><span style="color:#639958">$150</span> per passenger<br>
+                    </div>
+            </div>
+            </main>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

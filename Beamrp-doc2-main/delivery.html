@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include 'head.php'; ?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jobstyle.css">
+    <script defer src="javascript.js"></script>
+    <title>BeamRP - Documentation</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Sidebar">☰</button>
+        </div>
+        <div class="nav-center">
+            <a href="index.html">Introduction</a>
+                    <button class="nav-link" id="jobsBtn" onclick="toggleJobsDropdown(event)" aria-expanded="false">
+                        Jobs <span class="chevron">▼</span>
+                    </button>
+                    
+
+            <a href="https://docs.google.com/spreadsheets/d/1eTx5NwP8ICTK3PjhSu8ZJvkPp9dxqNUeACPlvI5YD6c/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Prices</a>
+            <a href="#" onclick="checkLink('businesses')">Businesses</a>
+            <a href="#" onclick="checkLink('lawcrime')">Law and Crime</a>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    <div class="fullwidth-dropdown" id="jobsDropdownMenu">
+        <div class="dropdown-job-grid">
+            <a class="dropdownbox" href="delivery.html">
+                <h1>Delivery</h1>
+                <img loading="lazy" src="images/lowQuality/Truckbridge.webp" alt="Delivery">
+            </a>
+            <a class="dropdownbox" href="taxi.html">
+                <h1>Taxi Driver</h1>
+                <img loading="lazy" src="images/lowQuality/Taxi.webp" alt="Taxi Driver">
+            </a>
+            <a class="dropdownbox" href="bus.html">
+                <h1>Bus Driver</h1>
+                <img loading="lazy" src="images/lowQuality/Bus.webp" alt="Bus Driver">
+            </a>
+            <a class="dropdownbox" href="business.html">
+                <h1>Business</h1>
+                <img loading="lazy" src="images/lowQuality/Boxtruck.webp" alt="Business">
+            </a>
+            <a class="dropdownbox" href="emergency.html">
+                <h1>Emergency</h1>
+                <img loading="lazy" src="images/lowQuality/Emergency.webp" alt="Emergency Services">
+            </a>
+            <a class="dropdownbox" href="crime.html">
+                <h1>Criminal</h1>
+                <img loading="lazy" src="images/lowQuality/Crime.webp" alt="Criminal">
+            </a>
+        </div>
+    </div>
+
+<div class="tabcontainer">
+    <!-- Sidebar Navigation -->
+    <aside class="side">
+        <ol class="toc" role="list">
+            <li><a href="#1">Roleplay</a></li>
+            <li>
+                <a href="#2">Levels</a>
+            </li>
+        </ol>
+        <div class = "bottom-side">
+            <a href="#" onclick="checkLink('index')">Home</a>
+            <a href="#" onclick="checkLink('reference')" style="position:fixed; right:5px">Reference</a>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="maincontent">
+
+    <!-- Image Header -->
+    <div class="deliveryimg">
+        <h1 class="jobtitle">Delivery Driver</h1>
+    </div>
+    
+        <h2 id="1">
+            <span class="sectionnumber">Section 1</span>
+            <br><span class="sectiontitle">Roleplay</span>
+        </h2>
+
+        <p>It is up to each player to decide how to realistically roleplay their job. However, standard community expectations for delivery driver roleplay include:
+
+            <li><b>Stop at Delivery Locations:</b> Pause for a few seconds at designated drop-off points.</li>
+            <li><b>Drive Safely:</b> Maintain vehicle control to prevent damaging goods or risking traffic fines.</li>
+            <li><b>Physical Delivery (Optional):</b> Stepping out of your vehicle to unload goods enhances roleplay immersion.</li>
+        </p>
+
+        <h2 id="2">
+            <span class="sectionnumber">Section 2</span>
+            <br><span class="sectiontitle">Levels</span>
+        </h2>
+        <p>
+             Progress to higher job levels by completing hours in service (e.g., 3 hours required for Level 3).</p>
+        <div class="horizontal-container">
+            <div class="area-card">
+                <div class="area-title">Level 1</div>
+                    <p>Your starting level, only allows access to <a href="delivery.html" style="color:#eed69d">Delivery</a> and <a href="emergencyservice.html" style="color:#95b0da">Emergency Service jobs</a></p>
+
+                    <div class="reward-container">
+                        <p>In city: <span style="color:#639958">$55</span><br>
+                        Out city: <span style="color:#639958">$100</span></p>
+                    </div>
+            </div>
+            <div class="area-card">
+                <div class="area-title">Level 2</div>        
+
+                    <div class="reward-container" style="margin-top:15px">
+                        <p><strong>Unlocks:</strong></p>
+                        <ul style="padding-left:15px;margin-top:5px">
+                            <li><a href="#" onclick="checkLink('taxi')">Box truck</a> job</li>
+                            <li><a href="#" onclick="checkLink('taxi')">Taxi driver</a> job</li>
+                            <li><a href="#" onclick="checkLink('bus')">Bus driver</a> job</li>
+                        </ul>
+                    </div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p>In city: <span style="color:#639958">$70</span><br>
+                        Out city: <span style="color:#639958">$125</span></p>
+                    </div>
+            </div>
+            <div class="area-card">
+                <div class="area-title">Level 3</div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p><strong>Unlocks:</strong></p>
+                        <p>Shuffleboard Gavril MD-Series Box upfit for Box Truck deliveries.</p>
+                    </div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p>In city: <span style="color:#639958">$90</span><br>
+                        Out city: <span style="color:#639958">$175</span></p>
+                    </div>
+            </div>
+            <div class="area-card">
+                <div class="area-title">Level 4</div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p><strong>Unlocks:</strong></p>
+                        <p>Shuffleboard Gavril T-Series T82s Cabover Box upfit for Box Truck deliveries.</p>
+                    </div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p>Any location: <span style="color:#639958">$200</span></p>
+                    </div>
+            </div>
+            <div class="area-card">
+                <div class="area-title">Level 5</div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p><strong>Unlocks:</strong></p>
+                        <p>Shuffleboard Gavril T83s Long Nose Box upfit for Trucking missions.</p>
+                    </div>
+                    <div class="reward-container" style="margin-top:15px">
+                        <p>Any location: <span style="color:#639958">$300</span></p>
+                    </div>
+            </div>
+            </main>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
